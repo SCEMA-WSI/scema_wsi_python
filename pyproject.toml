@@ -56,7 +56,7 @@ name = "python_package"
 
 [tool.flit.metadata]
 requires =[
-    {package  = "dask"},
+    {package  = "dask", version = ">=2.30.0"},
     {package  = "scikit-image", version = ">=0.20.0"}
 ]
 
