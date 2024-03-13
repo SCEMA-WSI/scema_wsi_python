@@ -54,6 +54,12 @@ Tracker = "https://github.com/microsoft/python-package-template/issues"
 [tool.flit.module]
 name = "python_package"
 
+[tool.flit.metadata]
+requires =[
+    {package  = "dask"},
+    {package  = "scikit-image", version = ">=0.20.0"}
+]
+
 [tool.bandit]
 exclude_dirs = ["build","dist","tests","scripts"]
 number = 4
